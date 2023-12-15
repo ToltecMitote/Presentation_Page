@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation</title>
+</head>
+<body>
+    <div style="color: blueviolet;">
+    <h1>Input</h1>
+    <input type="text" id="inputText" placeholder="username">
+    <button onclick="reflectTextAsHTML()">Click Me</button>
+    </div>
+<hr size="2">
+<div style="color: rgb(13, 30, 184);">
+    <h3>My intrest lists</h3>
+<ul>
+    <li>I like experimenting with different programming languages.</li>
+    <li>I'm intressted in analysing data flows.</li>
+    <li>I like building projects.</li>
+    <li>I prefer working on linux OS</li>
+</ul>
+<hr size="10">
+</div>
+
+<div style="background-color: lawngreen;">
+<h4>Programming skills</h4>
+<ol>
+    <li>Python</li>
+    <li>Android in Java</li>
+    <li>C++</li>
+</ol>
+</div>
+<hr>
+
+</body>
+<script>
+    function reflectTextAsHTML(){
+        var inputText = document.getElementById('textInput').value;
+        document.getElementById('output').innerHTML = inputText
+    }
+</script>
+
+</html>
